@@ -11,7 +11,7 @@
     <h1>Benvenuto!</h1>
     <p class="lg:w-[35%] w-full justify-center text-center">Abbiamo appena inviato la tua card anche alla tua email e via SMS al tuo numero di cellulare, se lo hai inserito in fase di iscrizione.</p>
 
-<div class="md:flex flex-row ">
+<div class="md:flex flex-row mt-8">
     <div class="flex flex-col items-center font-bold lg:ml-60 ">
         <p>Ecoo la tua card:</p>
         <img src="img\newcard.png" class="w-80 h-52 rounded-lg mt-6" alt="card">
@@ -46,7 +46,7 @@
         <div class="flex md:flex-row flex-col items-center  ">
         <div class="bg-[#e6e6e9] flex  w-32 h-24 justify-center  items-center rounded-xl ">
            <span class="border-3 border-[#1777bf] rounded-full w-14 h-14">
-            <svg fill="#1777bf" viewBox="-10 0 32 32" class="w-11 h-12  rotate-[-24deg] " version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="6"></g>
+            <svg fill="#1777bf" viewBox="-10 0 32 32" class="w-13 h-13  rotate-[-24deg] bg-white rounded-full" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="6"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                 </g><g id="SVGRepo_iconCarrier"> <title>euro</title>
                       <path d="M11.040 20.96c-0.6 0.24-1.2 0.32-1.84 0.32-2.12 0-3.92-1.24-4.76-3h4.72c0.48 0 0.84-0.4 0.84-0.84s-0.4-0.84-0.84-0.84h-5.24c-0.040-0.2-0.040-0.4-0.040-0.6s0-0.4 0.040-0.6h5.24c0.48 0 0.84-0.4 0.84-0.84s-0.4-0.84-0.84-0.84h-4.76c0.88-1.76 2.68-3 4.76-3 0.6 0 1.24 0.12 1.84 0.32 0.44 0.16 0.92-0.080 1.080-0.52s-0.080-0.92-0.52-1.080c-0.8-0.28-1.6-0.44-2.44-0.44-3.080 0-5.68 1.96-6.6 4.72h-1.68c-0.48 0-0.84 0.4-0.84 0.84s0.4 0.84 0.84 0.84h1.36c0 0.2-0.040 0.4-0.040 0.6s0 0.4 0.040 0.6h-1.36c-0.48 0-0.84 0.4-0.84 0.84s0.4 0.84 0.84 0.84h1.72c0.96 2.72 3.56 4.72 6.6 4.72 0.84 0 1.64-0.16 2.44-0.44 0.44-0.16 0.68-0.64 0.52-1.080s-0.64-0.68-1.080-0.52z"></path> </g></svg>
@@ -86,7 +86,7 @@
                </div>
 
 
-               <div class="md:hidden flex flex-col text-center my-4 w-[70%]">
+               <div class="md:hidden flex flex-col text-center my-4 w-full md:w-[70%]">
                 <h5 >RAGGIUNGI LE SOGLIE PUNTI</h5>
                 <p >Colleziona i punti, raggiungi i livelli crescenti e richiedi sconti immediati!</p>
                </div>
@@ -99,13 +99,19 @@
             <div class="bg-[#e6e6e9] flex  w-32 h-24 justify-center  items-center rounded-xl ">
             <svg class="w-14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
             viewBox="0 0 512 512" xml:space="preserve" fill="#E21B1B" transform="rotate(-24)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" ></g><g id="SVGRepo_iconCarrier"> <polygon style="fill:#FFFFFF;"
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" ></g><g id="SVGRepo_iconCarrier"> <polygon style="fill:transparent;"
                  points="212.064,430.232 135.352,466.216 130.824,381.968 47.2,372.872 80.416,302.152 14.312,252.728 78.696,213.912 46.68,131.816 132.408,127.224
                   136.936,41.52 212.112,80.496 259.48,13.472 309.608,78.592 381.872,44.072 389.44,127.016 474.808,134.48 434.456,204.496 499.648,257.112 439.952,310.52
                    469.48,378.208 386.152,379.72 380.072,464.52 309.232,429.976 263.592,498.216 "></polygon>
                     <path style="fill:#0f73bd;" d="M259.752,26.944l39.568,51.4l7.896,10.256l11.68-5.576l56.056-26.776l5.912,64.832l1.216,13.32 l13.328,1.168l66.2,5.792l-30.672,53.224l-6.832,11.848l10.64,8.592l52.552,42.408l-48.368,43.272l-8.624,7.712l4.624,10.608 l22.424,51.408l-64.048,1.16l-14.624,0.264l-1.048,14.592l-4.704,65.704l-53.92-26.304l-12.552-6.12l-7.76,11.608l-35.512,53.104 l-40.832-53.88l-7.824-10.32l-11.728,5.504l-60.104,28.192l-3.528-65.608l-0.728-13.576l-13.52-1.472l-65.72-7.144l25.672-54.68 l5.544-11.808l-10.448-7.808l-51.344-38.4l48.432-29.192l11.544-6.96l-4.896-12.56l-25.56-65.52l67.504-3.608l14.368-0.768 l0.76-14.368l3.488-66.136l57.968,30.048l12.384,6.416l8.048-11.392L259.752,26.944 M259.2,0l-49.6,70.184l-80-41.472l-4.8,90.92 l-89.6,4.776l33.6,86.128L0,252.016l70.4,52.632l-35.2,74.968l88,9.568l4.8,89.32l81.6-38.28L264,512l48-71.776l75.2,36.688 l6.4-89.32l88-1.592l-32-73.368L512,256.8l-67.2-54.232L488,127.6l-91.2-7.976l-8-87.728L312,68.584L259.2,0L259.2,0z"></path> <path d="M344.92,365.512c-12.648,7.064-34.216,14.12-58.008,14.12c-36.448,0-69.896-14.88-90.728-42.392 c-10.056-12.648-17.472-28.624-20.824-48.336h-24.176v-26.416h20.448c0-1.856,0-4.088,0-6.328c0-3.712,0.384-7.416,0.384-11.152 h-20.824v-26.392h24.92c4.824-20.088,13.768-37.184,25.656-50.952c21.208-23.8,50.952-37.92,85.896-37.92 c22.68,0,42.392,5.208,55.776,11.152l-10.416,42.392c-9.648-4.088-24.888-8.944-41.272-8.944c-17.832,0-34.216,5.968-45.72,20.088 c-5.208,5.944-9.296,14.504-11.912,24.176h92.608V245H228.52c-0.352,3.736-0.352,7.824-0.352,11.528c0,2.232,0,3.712,0,5.944h98.552 v26.416h-93.352c2.592,11.152,6.68,19.712,12.264,26.032c11.888,13.384,29.384,18.944,47.976,18.944 c17.096,0,34.568-5.56,42.392-9.648L344.92,365.512z"></path> </g></svg>
             </div>
-               <div class="flex flex-col  md:mx-3 md:items-start items-center my-4  md:w-[50%]  w-[80%] ">
+               <div class="hidden md:flex flex-col  md:mx-3 md:items-start items-center my-4  md:w-[50%]  w-[80%] ">
+                <h5>RICHIEDI I PREMI SCONTO</h5>
+                <p>Richiedi i premi sconto raggiunti in cassa o online.</p>
+               </div>
+
+
+               <div class="flex md:hidden flex-col  text-center items-center my-4  w-[80%] ">
                 <h5>RICHIEDI I PREMI SCONTO</h5>
                 <p>Richiedi i premi sconto raggiunti in cassa o online.</p>
                </div>
@@ -117,7 +123,7 @@
         <div class="flex md:flex-row flex-col items-center ">
             <div class="bg-[#e6e6e9] flex  w-32 h-24 justify-center  items-center rounded-xl ">
                 <svg fill="#0f73bd" width="50px" height="50px" viewBox="0 0 512 512" id="_x30_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.072"></g><g id="SVGRepo_iconCarrier"><path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,90 c37.02,0,67.031,35.468,67.031,79.219S293.02,248.438,256,248.438s-67.031-35.468-67.031-79.219S218.98,90,256,90z M369.46,402 H142.54c-11.378,0-20.602-9.224-20.602-20.602C121.938,328.159,181.959,285,256,285s134.062,43.159,134.062,96.398 C390.062,392.776,380.839,402,369.46,402z"></path></g></svg>            </div>
-               <div class="flex flex-col    md:w-[50%]  w-full  md:mx-3 md:items-start items-center my-4">
+               <div class="flex flex-col md:w-[50%]  w-full  md:mx-3 md:items-start items-center my-4">
                 <h5>ACCEDI ALLA TUA AREA RISERVATA</h5>
                 <p>Vedi tutte le informazioni sul tuo profilo loyalty</p>
                </div>

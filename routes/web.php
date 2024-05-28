@@ -37,3 +37,6 @@ Route::get('/cardToysCenter', function () {
     return view('cardToysCenter');
 });
 
+Route::get('/benvenuto', function () {
+    return view('benvenuto');
+});

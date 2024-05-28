@@ -48,10 +48,11 @@
     
 </div>
 <div class="flex flex-col space-y-3 ">
-    <x-button.button >CONFERMA</x-button.button>
+  <div class="self-center mt-4">    <x-button.button>CONFERMA</x-button.button>
+  </div>
    
-<a href="#" class="self-center md:mb-0 mb-3 text-black text-sm font-medium">Annulla</a>
-<p class="self-center md:w-full md:mb-0 mb-4 text-center w-[75%] text-base md:text-sm font-medium">Riceverai una mail di conferma all'indirizzo test@example.it</p>
+<a href="#" class="self-center md:mb-0 mb-2 text-black text-sm font-medium  underline">Annulla</a>
+<p class="self-center md:w-full md:mb-0 mb-2 text-center w-[75%] text-base md:text-sm font-medium">Riceverai una mail di conferma all'indirizzo test@example.it</p>
 
 </div>
 </div>
