@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.registrati{
+  width:auto;
+  height: auto;
+  background-color: #9999a1;
+padding: 16 24;
+ display: flex;
+}
+
+.registrati h1{
+  padding: 12;
+  color: #eeeeee;
+  font-size:30px;
+  margin: 12 0;
+ font-weight:700;
+  
+}
+
+.card-position{
+  justify-content: center;
+  
+  margin: 12;
+}
+
+.card{
+  background-color: #e6e6e9;
+  border-radius: 4%;
+  display: flex;
+  padding: 12;
+  width: 20rem;
+  
+}
+
+.card-img-top{
+  transform: rotate(-25deg);
+}
+
+.second-img{
+  transform: rotate(-20deg);
+}
+
+
+.partner{
+  background-color: #292f36;
+  padding: 40;
+  height: auto;
+}
+
+.partner h1{
+  color: white;
+}
+
+
+.image{
+  width: 96px;
+  height: 80px;
+}
+
+
+/* CardToys css */
+
+.toggle-btn {
+  display: none; 
+}
+.toggle-label {
+  display: inline-block;
+  padding: 16px 24px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  margin: 8;
+  font-size:15px;
+}
+.toggle-label.selected {
+  border-color: green; 
+  background-color: #d6f5d6;
+}
+.toggle-label.selected::after {
+  content: 'x'; 
+  position: absolute;
+  top: 40%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: red;
+
+}
+
+@media (min-width: 768px) {
+.svg-dots{
+  width: 60;
+  height: 60;
+
+}}
+
+
+@media (max-width: 767px) {
+  .svg-dots{
+    width: 70px;
+    height: 70px;
+  
+  }}
