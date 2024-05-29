@@ -3,27 +3,28 @@
 
 
 <div class="registrati flex flex-col  justify-center bg-[#9999a1] ">
-  <h1 class="text-xl text-[#d6d6da] tracking-wide translate-x-[19%]">Perché registrarsi?</h1>
+  <h1 class="md:text-xl hidden md:flex  text-[rgb(228,228,228)] tracking-wide text-sm  md:translate-x-[19%] ">Perché registrarsi?</h1>
+  <h2 class="text-xl md:hidden flex font-semibold tracking-wide text-[rgb(231,231,231)]">Perché registrarsi?</h1>
 
-  <div class="lg:flex md:flex-row flex-col  gap-16 card-position pb-8">
+  <div class="lg:flex md:flex-row flex-col  gap-7 card-position pb-8 ">
 
 
-    <div class="bg-[#e6e6e9] rounded-xl flex flex-col p-6 lg:m-0  lg:w-[21rem] h-[18rem]">
-      <img class="card-img-top w-36 h-20 mx-auto mt-8 md:h-24" src="img\card.png" alt="Card image cap">
-      <p class="card-text text-center text-balance leading-5 mt-16 font-bold text-[#292f36] text-base md:text-lg">Tutti i vantaggi della Carta Fedeltà Toys Center</p>
+    <div class="bg-[#e6e6e9] rounded-xl flex flex-col p-2 lg:m-0 m-3 lg:w-[21rem] h-[17rem]">
+      <img class="card-img-top md:w-36 w-32 h-20 mx-auto mt-7 md:h-24" src="img\card.png" alt="Card image cap">
+      <p class="card-text text-center text-balance leading-5 mt-16 font-bold text-[#292f36] text-base md:text-lg w-[70%] self-center">Tutti i vantaggi della Carta Fedeltà Toys Center</p>
     </div>
 
 
-    <div class="bg-[#e6e6e9] rounded-xl flex flex-col p-6 lg:m-0  lg:w-[21rem] h-[18rem]">
+    <div class="bg-[#e6e6e9] rounded-xl flex flex-col p-3 lg:m-0 m-3  lg:w-[21rem] h-[17rem]">
    
-        <svg xmlns="http://www.w3.org/2000/svg"  class="w-32 h-20 mx-auto mt-4 -rotate-[22deg] md:w-32 md:h-24" viewBox="0 0 24 24" fill="none" stroke="#2e343b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <svg xmlns="http://www.w3.org/2000/svg"  class=" h-44 mx-auto mt-6 -rotate-[22deg] md:w-32 md:h-24" viewBox="0 0 24 24" fill="none" stroke="#2e343b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier"> <path d="M3 11l18-5v12L3 14v-3z"></path> <path d="M11.6 16.8a3 3 0 11-5.8-1.6"></path> </g></svg>
       <p class="card-text text-center text-balance leading-5 mt-16 font-bold text-[#292f36] text-base md:text-lg">Ricevi solo le offerte e le comunicazioni per i giochi 18+</p>
 
     </div>
 
-    <div class="bg-[#e6e6e9] rounded-xl flex flex-col lg:m-0  p-6 lg:w-[21rem] h-[18rem] ">
-      <svg viewBox="0 0 24 24" fill="none" class="lg:w-72  h-24 mt-4" xmlns="http://www.w3.org/2000/svg">
+    <div class="bg-[#e6e6e9] rounded-xl flex flex-col lg:m-0 m-3 p-3 lg:w-[21rem] h-[17rem] ">
+      <svg viewBox="0 0 24 24" fill="none" class="  h-52 mt-6" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
@@ -31,7 +32,7 @@
         </g>
       </svg>
 
-      <p class="card-text text-center text-balance leading-5 mt-16  text-[#292f36] font-bold text-base md:text-lg">Promozioni speciali e anteprime esclusive</p>
+      <p class="card-text text-center text-balance leading-5 mt-16  text-[#292f36] font-bold text-base md:text-lg w-[70%] self-center">Promozioni speciali e anteprime esclusive</p>
 
     </div>
 
@@ -41,7 +42,7 @@
 </div>
 </div>
 
-<x-partner></x-partner>
+{{-- <x-partner></x-partner> --}}
 
 </div>
 

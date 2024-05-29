@@ -3,7 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/dati', function () {
+    return view('dati');
 });
 
 
@@ -37,6 +41,6 @@ Route::get('/cardToysCenter', function () {
     return view('cardToysCenter');
 });
 
-Route::get('/benvenuto', function () {
-    return view('benvenuto');
+Route::get('/layouts/benvenuto', function () {
+    return view('layouts/benvenuto');
 });
