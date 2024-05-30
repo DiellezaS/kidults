@@ -28,11 +28,11 @@ Route::get('/cardToys', function () {
 
 
 Route::get('/card', function () {
-    return view('components\card');
+    return view('/card');
 });
 
 Route::get('/personCard', function () {
-    return view('components\personCard');
+    return view('/personCard');
 });
 
 

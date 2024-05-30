@@ -72,10 +72,10 @@
         </div>
         <div>
           <h1 class="text-left text-[#F34551] font-bold lg:text-3xl md:text-xl">I tuoi interesi</h1>
-          <h3 class=" font-semibold mt-4 text-lg text-left">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze. </h3>
+          <h3 class=" font-semibold mt-2 text-xl text-left">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze. </h3>
 
           
-          <x-layouts.check-toggles class="w-[55%] mx-auto"/>
+          <x-layouts.check-toggles class="md:w-[52%] w-[100%] mx-auto mt-8"/>
 
         </div>
         <div class="flex flex-col gap-5">
@@ -86,6 +86,9 @@
       </div>
     </x-forms.form>
   </div>
+
+
+
   <script type="text/javascript">
   $(function() {
     $("#datepicker").datepicker({

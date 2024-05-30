@@ -26,7 +26,7 @@
       </a>
     </div>
     <div class="flex lg:gap-5 md:gap-3 mt-4 ml-6">
-      <img src="img/toys_center.png" alt="Toys Center" class="lg:w-32 h-[60%] md:w-24">
+      <img src="img/toys_center.png" alt="Toys Center" class="lg:w-32 h-[70%] md:w-24">
       <img src="img/bimbo.png" alt="Bimbo Store" class="lg:w-32 h-[60%] md:w-24">
       <img src="img/fao-schwarz.png" alt="Fao Schwarz" class="lg:w-32 h-[60%] md:w-24">
     </div>
@@ -61,7 +61,7 @@
       <line x1="13" y1="34" x2="70" y2="34" stroke="white" stroke-width="5" stroke-linecap="round" />
       <line x1="0" y1="39" x2="30" y2="39" stroke="#292F36" stroke-width="5" stroke-linecap="round" />
       <line x1="0" y1="43" x2="4" y2="43" stroke="#292F36" stroke-width="4.5" stroke-linecap="round" />
-      <line x1="4" y1="43" x2="60" y2="43" stroke="white" stroke-width="5" stroke-linecap="round" />
+      <line x1="4" y1="43" x2="60" y2="43" stroke="white" stroke-width="3" stroke-linecap="round" />
     </svg>
   </div>
   <div class="flex md:hidden gap-3 p-2">
@@ -110,7 +110,7 @@
       <line x1="0" y1="34" x2="44" y2="34" stroke="white" stroke-width="5" stroke-linecap="round" />
       <line x1="20" y1="39" x2="80" y2="39" stroke="#292F36" stroke-width="5" stroke-linecap="round" />
       <line x1="45" y1="43" x2="80" y2="43" stroke="#292F36" stroke-width="4.5" stroke-linecap="round" />
-      <line x1="0" y1="43" x2="46" y2="43" stroke="white" stroke-width="5" stroke-linecap="round" />
+      <line x1="0" y1="43" x2="46" y2="43" stroke="white" stroke-width="3" stroke-linecap="round" />
     </svg>
   </div>
 </nav>
