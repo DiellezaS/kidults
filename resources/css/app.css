@@ -4,16 +4,12 @@
 
 
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  height: 7.4vh;
-}
-@media (min-width: 300px) and (max-width: 768px) {
+
+/* @media (min-width: 300px) and (max-width: 768px) {
   .navbar {
-    height: 10vh;
+    height: 7.5vh;
   }
-}
+} */
 .kidults-font {
   font-size: 55px;
   font-family: 'Minecrafter';

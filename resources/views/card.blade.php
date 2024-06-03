@@ -4,21 +4,21 @@
 <x-layouts.navbar />
 
 
-<div class="md:flex flex-col lg:h-full h-fit bg-[#292f36]">
-    <div class=" text-white flex flex-col items-center justify-center gap-3 md:m-20  ">
-        <h2 class="text-xl md:text-4xl font-bold tracking-wide md:mt-0 mt-16">Benvenuto!</h2>
+<div class="flex flex-col lg:h-full h-fit bg-[#292f36]">
+    <div class=" text-white flex flex-col items-center justify-center gap-3 lg:m-20  ">
+        <h2 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-16">Benvenuto!</h2>
         <p class="lg:w-[35%] w-full justify-center text-center">Abbiamo appena inviato la tua card anche alla tua email e
             via SMS al tuo numero di cellulare, se lo hai inserito in fase di iscrizione.</p>
 
-        <div class="md:flex flex-row md:mt-8 ">
+        <div class="lg:flex flex-row lg:mt-8 ">
             <div class="flex flex-col items-center font-semibold lg:ml-60 ">
                 <p class="text-lg">Ecoo la tua card:</p>
-                <img src="/img\newcard.png" class="w-80 h-52 rounded-lg md:mt-6 mt-2" alt="card">
+                <img src="/img\newcard.png" class="w-80 h-52 rounded-lg lg:mt-6 mt-2" alt="card">
                 <span
                     class="-translate-y-9 text-center font-semibold text-xl text-black tracking-wider">6666691003559</span>
 
 
-                <div class="w-48 flex  bg-[#ffb3c7] text-black rounded-full p-1  md:mt-8">
+                <div class="w-48 flex  bg-[#ffb3c7] text-black rounded-full p-1  lg:mt-8">
                     <span>
                         <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" class="w-12 ml-4" fill="none">
                             <g id="SVGRepo_bgCarrier" stroke-width="6"></g>
@@ -40,7 +40,7 @@
             </div>
 
 
-            <div class="mt-8 w-44 h-[400px] md:flex hidden">
+            <div class="mt-8 w-44 h-[400px] lg:flex hidden">
                 <svg viewBox="4 1 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -54,12 +54,12 @@
             </div>
 
 
-            <div class="flex flex-col  md:gap-3">
+            <div class="flex flex-col  gap-3">
                 <p class="font-semibold lg:self-start self-center text-lg lg:m-0 m-8">Cosa puoi fare adesso?</p>
 
 
-                <div class="flex md:flex-row flex-col items-center  ">
-                    <div class="bg-[#e6e6e9] flex md:w-32 md:h-24 w-36 h-28 justify-center  items-center rounded-xl ">
+                <div class="flex lg:flex-row flex-col items-center  ">
+                    <div class="bg-[#e6e6e9] flex lg:w-32 lg:h-24 w-36 h-28 justify-center  items-center rounded-xl ">
                         <span class="border-4 border-[#1777bf] rounded-full w-14 h-14">
                             <svg fill="#1777bf" viewBox="-10 0 32 32"
                                 class="w-13 h-13  rotate-[-24deg] bg-white rounded-full" version="1.1"
@@ -91,74 +91,36 @@
                 </div>
 
 
-                <div class="flex md:flex-row flex-col items-center">
-                    <div class="bg-[#e6e6e9] flex  md:w-32 md:h-24 w-36 h-28 justify-center  items-center rounded-xl ">
+                <div class="flex lg:flex-row flex-col items-center">
 
-                        <div class="flex justify-center text-[9px] rotate-[22deg] translate-x-16  ">
+                  <div class="bg-[#e6e6e9] flex  lg:w-32 lg:h-24 w-36 h-28 justify-center  items-center rounded-xl ">
 
-                            <svg class="w-20 h-16" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z"
-                                        stroke="#fab600" stroke-width="1.176" stroke-linecap="round"
-                                        stroke-linejoin="round" fill="#fab600"></path>
-                                </g>
-                            </svg>
-                            <span class="text-white -translate-x-12 translate-y-7">300pt</span>
-                        </div>
+                        <div class="flex justify-center rotate-[10deg]  ">
 
-                        <div class="-translate-x-[70px]">
-                            <svg class="w-20 h-12 rotate-[24deg]" version="1.1" id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <g>
-                                        <path style="fill:#0f73bd;"
-                                            d="M100.512,100.512L100.512,100.512c0-12.575,10.193-22.768,22.768-22.768h265.44 c12.575,0,22.768,10.193,22.768,22.768l0,0c0,12.575-10.193,22.768-22.768,22.768H123.28 C110.705,123.28,100.512,113.086,100.512,100.512z">
-                                        </path>
-                                        <path style="fill:#0f73bd;"
-                                            d="M100.512,256.555L100.512,256.555c0-12.575,10.193-22.768,22.768-22.768h265.44 c12.575,0,22.768,10.193,22.768,22.768l0,0c0,12.575-10.193,22.768-22.768,22.768H123.28 C110.705,279.323,100.512,269.13,100.512,256.555z">
-                                        </path>
-                                        <path style="fill:#0f73bd;"
-                                            d="M100.512,410.933L100.512,410.933c0-12.575,10.193-22.768,22.768-22.768h265.44 c12.575,0,22.768,10.193,22.768,22.768l0,0c0,12.575-10.193,22.768-22.768,22.768H123.28 C110.705,433.701,100.512,423.507,100.512,410.933z">
-                                        </path>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 inline-block" viewBox="0 0 107.208 76.321">
+                                <g id="Raggruppa_2404" data-name="Raggruppa 2404" transform="translate(-641.753 -891.607)">
+                                    <g id="Raggruppa_1989" data-name="Raggruppa 1989" transform="translate(693.08 891.607) rotate(16)">
+                                        <path id="Tracciato_3576" data-name="Tracciato 3576" d="M57.135,23.381l-9.392,9.158a9.358,9.358,0,0,0-2.433,6.712c.017.194.038.38.069.562L47.6,52.74c.4,2.342-.994,3.353-3.095,2.252L32.889,48.885a9.23,9.23,0,0,0-7.65,0L13.631,54.992c-2.1,1.1-3.5.091-3.094-2.252l2.217-12.927a8.337,8.337,0,0,0-.311-3.635,8.6,8.6,0,0,0-2.053-3.639L1,23.381c-1.7-1.66-1.171-3.294,1.18-3.639l12.978-1.884a9.238,9.238,0,0,0,6.193-4.5L27.154,1.6c1.05-2.131,2.77-2.131,3.824,0l5.8,11.764a9.232,9.232,0,0,0,6.189,4.5l12.979,1.884C58.307,20.087,58.838,21.721,57.135,23.381Z" transform="translate(0)" fill="#fab600"></path>
                                     </g>
-                                    <g>
-                                        <path style="fill:#0f73bd;"
-                                            d="M157.153,100.512L157.153,100.512c0-12.575,10.193-22.768,22.768-22.768H123.28 c-12.575,0-22.768,10.193-22.768,22.768l0,0c0,12.575,10.193,22.768,22.768,22.768h56.641 C167.346,123.28,157.153,113.086,157.153,100.512z">
-                                        </path>
-                                        <path style="fill:#0f73bd;"
-                                            d="M157.153,256.555L157.153,256.555c0-12.575,10.193-22.768,22.768-22.768H123.28 c-12.575,0-22.768,10.193-22.768,22.768l0,0c0,12.575,10.193,22.768,22.768,22.768h56.641 C167.346,279.323,157.153,269.13,157.153,256.555z">
-                                        </path>
-                                        <path style="fill:#0f73bd;"
-                                            d="M157.153,410.933L157.153,410.933c0-12.575,10.193-22.768,22.768-22.768H123.28 c-12.575,0-22.768,10.193-22.768,22.768l0,0c0,12.575,10.193,22.768,22.768,22.768h56.641 C167.346,433.701,157.153,423.507,157.153,410.933z">
-                                        </path>
-                                    </g>
-                                    <g>
-                                        <path style="fill:#0f73bd;"
-                                            d="M411.488,512c-12.555,0-22.768-10.213-22.768-22.768V22.768C388.72,10.213,398.934,0,411.488,0 s22.768,10.213,22.768,22.768v466.464C434.256,501.787,424.043,512,411.488,512z">
-                                        </path>
-                                        <path style="fill:#0f73bd;"
-                                            d="M100.512,512c-12.555,0-22.768-10.213-22.768-22.768V22.768C77.744,10.213,87.957,0,100.512,0 s22.768,10.213,22.768,22.768v466.464C123.28,501.787,113.066,512,100.512,512z">
-                                        </path>
-                                    </g>
-                                    <g>
-                                        <path style="fill:#0f73bd;"
-                                            d="M416.486,489.232V22.768c0-7.327,3.493-13.837,8.885-18.004C421.524,1.789,416.716,0,411.488,0 c-12.555,0-22.768,10.213-22.768,22.768v466.464c0,12.555,10.213,22.768,22.768,22.768c5.228,0,10.036-1.789,13.883-4.763 C419.979,503.069,416.486,496.559,416.486,489.232z">
-                                        </path>
-                                        <path style="fill:#0f73bd;"
-                                            d="M105.51,489.232V22.768c0-7.327,3.493-13.837,8.885-18.004C110.548,1.789,105.74,0,100.512,0 C87.957,0,77.744,10.213,77.744,22.768v466.464c0,12.555,10.213,22.768,22.768,22.768c5.228,0,10.036-1.789,13.883-4.763 C109.003,503.069,105.51,496.559,105.51,489.232z">
-                                        </path>
+                                    <text id="_300" data-name="300" transform="translate(701.924 928.835) rotate(14)" fill="#fff" font-size="8" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="-0.01em">
+                                        <tspan x="0" y="0">300</tspan>
+                                    </text>
+                                    <text id="pt" transform="translate(720.246 931.09) rotate(14)" fill="#fff" font-size="5" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="-0.01em">
+                                        <tspan x="0" y="0">pt</tspan>
+                                    </text>
+                                    <g id="Raggruppa_1990" data-name="Raggruppa 1990" transform="translate(307.555 -152.84) rotate(16)">
+                                        <path id="Tracciato_3575" data-name="Tracciato 3575" d="M0,0V51.152" transform="translate(629.5 920.5)" fill="none" stroke="#0f73bd" stroke-linecap="round" stroke-width="5"></path>
+                                        <line id="Linea_328" data-name="Linea 328" y2="49.62" transform="translate(668.783 921.327)" fill="none" stroke="#0f73bd" stroke-linecap="round" stroke-width="5"></line>
+                                        <line id="Linea_329" data-name="Linea 329" x1="38.869" transform="translate(629.5 961.023)" fill="none" stroke="#0f73bd" stroke-linecap="round" stroke-width="5"></line>
+                                        <line id="Linea_330" data-name="Linea 330" x1="38.869" transform="translate(629.5 947.396)" fill="none" stroke="#0f73bd" stroke-linecap="round" stroke-width="5"></line>
+                                        <line id="Linea_331" data-name="Linea 331" x1="38.869" transform="translate(629.5 933.768)" fill="none" stroke="#0f73bd" stroke-linecap="round" stroke-width="5"></line>
                                     </g>
                                 </g>
                             </svg>
+
+                        
                         </div>
-                    </div>
+                    </div> 
 
                     <x-forms.card-text title="RAGGIUNGI LE SOGLIE PUNTI"
                         description="Colleziona i punti, raggiungi i livelli crescenti e richiedi sconti immediati!"></x-forms.card-text>
@@ -172,9 +134,9 @@
 
 
 
-                <div class="flex md:flex-row flex-col items-center">
-                    <div class="bg-[#e6e6e9] flex md:w-32 md:h-24 w-36 h-28 justify-center items-center rounded-xl">
-                        <svg class="w-14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <div class="flex lg:flex-row flex-col items-center">
+                    <div class="bg-[#e6e6e9] flex lg:w-32 lg:h-24 w-36 h-28 justify-center items-center rounded-xl">
+                        {{-- <svg class="w-14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
                             fill="#E21B1B" transform="rotate(-25)">
                             <g id="SVGRepo_bgCarrier" stroke-width="12"></g>
@@ -190,6 +152,21 @@
                                     d="M344.92,365.512c-12.648,7.064-34.216,14.12-58.008,14.12c-36.448,0-69.896-14.88-90.728-42.392 c-10.056-12.648-17.472-28.624-20.824-48.336h-24.176v-26.416h20.448c0-1.856,0-4.088,0-6.328c0-3.712,0.384-7.416,0.384-11.152 h-20.824v-26.392h24.92c4.824-20.088,13.768-37.184,25.656-50.952c21.208-23.8,50.952-37.92,85.896-37.92 c22.68,0,42.392,5.208,55.776,11.152l-10.416,42.392c-9.648-4.088-24.888-8.944-41.272-8.944c-17.832,0-34.216,5.968-45.72,20.088 c-5.208,5.944-9.296,14.504-11.912,24.176h92.608V245H228.52c-0.352,3.736-0.352,7.824-0.352,11.528c0,2.232,0,3.712,0,5.944h98.552 v26.416h-93.352c2.592,11.152,6.68,19.712,12.264,26.032c11.888,13.384,29.384,18.944,47.976,18.944 c17.096,0,34.568-5.56,42.392-9.648L344.92,365.512z">
                                 </path>
                             </g>
+                        </svg> --}}
+
+
+
+                        <svg class="h-20 inline-block" viewBox="0 0 87.887 87.284">
+                            <g id="Raggruppa_2405" data-name="Raggruppa 2405" transform="translate(-1033.47 -892.477)">
+                                <g id="brand-icon" transform="matrix(0.951, -0.309, 0.309, 0.951, 1036, 915.382)">
+                                    <g id="Raggruppa_971" data-name="Raggruppa 971" transform="translate(0 0)">
+                                        <path id="Tracciato_259" data-name="Tracciato 259" d="M31.388.827a1.944,1.944,0,0,1,3.181,0l5.755,8.2a2.538,2.538,0,0,0,2.732.994l9.678-2.581a1.944,1.944,0,0,1,2.437,2.045l-.862,9.98a2.539,2.539,0,0,0,1.454,2.518l9.073,4.244a1.944,1.944,0,0,1,.552,3.133l-7.075,7.091a2.539,2.539,0,0,0-.5,2.863L62.033,48.4a1.944,1.944,0,0,1-1.591,2.755l-9.978.884A2.539,2.539,0,0,0,48.237,53.9l-2.6,9.673a1.943,1.943,0,0,1-2.99,1.088l-8.212-5.736a2.539,2.539,0,0,0-2.907,0l-8.212,5.736a1.943,1.943,0,0,1-2.99-1.088L17.72,53.9a2.539,2.539,0,0,0-2.227-1.869L5.515,51.15A1.944,1.944,0,0,1,3.924,48.4l4.223-9.083a2.539,2.539,0,0,0-.5-2.863L.568,29.358a1.944,1.944,0,0,1,.552-3.133l9.073-4.244a2.539,2.539,0,0,0,1.454-2.518l-.862-9.98a1.944,1.944,0,0,1,2.437-2.045L22.9,10.02a2.538,2.538,0,0,0,2.732-.994Z" fill="none" stroke="#0f73bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+                                    </g>
+                                </g>
+                                <text id="_" data-name="€" transform="translate(1071.961 951.594) rotate(-30)" fill="#d0333a" font-size="30" font-family="Montserrat-Bold, Montserrat" font-weight="700">
+                                    <tspan x="0" y="0">€</tspan>
+                                </text>
+                            </g>
                         </svg>
                     </div>
 
@@ -204,8 +181,8 @@
 
 
 
-                <div class="flex md:flex-row flex-col items-center ">
-                    <div class="bg-[#e6e6e9] flex  md:w-32 md:h-24 w-36 h-28 justify-center  items-center rounded-xl ">
+                <div class="flex lg:flex-row flex-col items-center ">
+                    <div class="bg-[#e6e6e9] flex  lg:w-32 lg:h-24 w-36 h-28 justify-center  items-center rounded-xl ">
                         <svg fill="#0f73bd" width="50px" height="50px" viewBox="0 0 512 512" id="_x30_1"
                             version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -2,8 +2,8 @@
 
 
 
-<div class="registrati flex flex-col  justify-center bg-[#9999a1] ">
-  <h1 class="md:text-xl hidden md:flex  text-[rgb(228,228,228)] tracking-wide text-sm  md:translate-x-[20%] font-family">Perché registrarsi?</h1>
+<div class="registrati flex flex-col  justify-center bg-[#9999a1]  ">
+  <h1 class="md:text-xl hidden md:flex  text-[rgb(228,228,228)] tracking-wide text-sm  font-family">Perché registrarsi?</h1>
   <h2 class="text-xl md:hidden flex font-semibold tracking-wide text-[rgb(231,231,231)] font-family">Perché registrarsi?</h1>
 
   <div class="lg:flex md:flex-row flex-col  gap-14 card-position pb-8 ">
@@ -42,7 +42,6 @@
 </div>
 </div>
 
-{{-- <x-partner></x-partner> --}}
 
 </div>
 
