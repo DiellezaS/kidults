@@ -1,6 +1,6 @@
 @vite('resources/css/app.css')
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="registrati flex flex-col  justify-center bg-[#9999a1]  ">
   <h1 class="md:text-xl hidden md:flex  text-[rgb(228,228,228)] tracking-wide text-sm  font-family">Perché registrarsi?</h1>

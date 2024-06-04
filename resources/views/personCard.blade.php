@@ -1,15 +1,16 @@
 @vite('resources/css/app.css')
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
 <x-layouts.navbar />
 
 
-<div class="md:flex flex-col lg:h-full h-fit bg-[#292f36]">
-    <div class=" text-white flex flex-col items-center justify-center gap-3 md:m-16 m-1">
-        <h1 class="text-xl md:text-4xl font-bold tracking-wide md:mt-0 mt-16">Benvenuto/a nell'area Kidults.</h1>
+<div class="lg:flex flex-col lg:h-full h-fit bg-[#292f36]">
+    <div class=" text-white flex flex-col items-center justify-center gap-3 lg:m-16 m-1">
+        <h1 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-16">Benvenuto/a nell'area Kidults.</h1>
 
-        <div class="md:flex flex-row mt-8">
+        <div class="lg:flex flex-row mt-8">
             <div class="flex flex-col items-center font-bold lg:ml-60 ">
                 <p>Ecoo la tua card:</p>
                 <img src="img\newcard.png" class="w-80 h-52 rounded-lg mt-6" alt="card">
@@ -39,7 +40,7 @@
             </div>
 
 
-            <div class="mt-8 w-44 h-[400px] md:flex hidden">
+            <div class="mt-8 w-44 h-[400px] lg:flex hidden">
                 <svg viewBox="4 1 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -57,7 +58,7 @@
                 <p class="font-semibold lg:self-start self-center md:text-base text-lg tracking-wide lg:m-0 m-8">Cosa
                     puoi fare adesso?</p>
 
-                <div class="flex md:flex-row flex-col items-center  ">
+                <div class="flex lg:flex-row flex-col items-center  ">
                     <div class="bg-[#e6e6e9] flex w-32 h-24 justify-center  items-center rounded-xl ">
                         <span class="border-4 border-[#1777bf] rounded-full w-14 h-14">
                             <svg fill="#1777bf" viewBox="-10 0 32 32"
@@ -91,7 +92,7 @@
                 </div>
 
 
-                <div class="flex md:flex-row flex-col items-center">
+                <div class="flex lg:flex-row flex-col items-center">
                     <div class="bg-[#e6e6e9] flex  w-32 h-24 justify-center  items-center rounded-xl ">
 
                         <div class="flex justify-center text-[9px] rotate-[22deg] translate-x-16  ">
@@ -172,7 +173,7 @@
 
        
             
-                <div class="flex md:flex-row flex-col items-center">
+                <div class="flex lg:flex-row flex-col items-center">
                     <div class="bg-[#e6e6e9] flex md:w-32 md:h-24 w-32 h-24 justify-center items-center rounded-xl">
                         <svg class="w-14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#E21B1B" transform="rotate(-25)">
                             <g id="SVGRepo_bgCarrier" stroke-width="12"></g>
@@ -198,7 +199,7 @@
 
 
 
-                <div class="flex md:flex-row flex-col items-center ">
+                <div class="flex lg:flex-row flex-col items-center ">
                     <div class="bg-[#e6e6e9] flex  w-32 h-24 justify-center  items-center rounded-xl ">
                         <svg fill="#0f73bd" width="50px" height="50px" viewBox="0 0 512 512" id="_x30_1"
                             version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"

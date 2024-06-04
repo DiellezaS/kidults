@@ -1,7 +1,8 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 @vite('resources/css/app.css')
 
 
-<nav class="w-screen lg:h-20 h-fit">
+<nav class="w-screen lg:h-20 md:h-fit h-14">
 
     <div class="lg:grid hidden grid-cols-2 ">
         <div class="grid grid-cols-3 pb-4">
@@ -86,11 +87,9 @@
 
 
 
-
-<div class="lg:hidden grid grid-cols-3 w-full">
-
-        <div class="w-full aspect-[2/1]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 45">
+    <div class="lg:hidden grid grid-cols-6 w-full">
+        <div class="col-span-1 aspect-[2/1] ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 45" class="h-14 md:h-fit">
                 <line x1="0" y1="1.8" x2="12" y2="1.6" stroke="#292F36"
                     stroke-width="6" />
                 <line x1="12" y1="1.6" x2="30" y2="1.8" stroke="white" stroke-width="6"
@@ -121,12 +120,10 @@
                     stroke-linecap="round" />
             </svg>
         </div>
-
-
-        <div class="flex lg:hidden items-center ">
-            <div class="pr-6 border-r">
-                <a href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16  mt-2" viewBox="0 0 90 60">
+        <div class="grid grid-cols-3 col-span-4 lg:hidden min-h-fit">
+            <div class="pr-6 border-r col-span-1 ">
+                <a href="/" class="flex justify-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:h-16 h-12 md:mt-3 pt-3" viewBox="0 0 90 60">
                         <g transform="translate(-452.675 78.961) rotate(-11)">
                             <g transform="translate(452.146 0)">
                                 <g>
@@ -153,22 +150,16 @@
                     </svg>
                 </a>
             </div>
-
-
             {{-- images sm-screen --}}
-            <div class="flex items-center space-x-4 flex-row ">
-                <img src="img/t_c.png" alt="Toys Center" class="w-20 ">
-                <img src="img/b_s.png" alt="Bimbo Store" class="w-20 h-10">
-                <img src="img/fao.png" alt="Fao Schwarz"  class="w-20 h-auto ">
+            <div class="grid grid-cols-3 col-span-2 px-6 gap-6  pt-3">
+                <img src="img/t_c.png" alt="Toys Center" class="" >
+                <img src="img/b_s.png" alt="Bimbo Store" class="">
+                <img src="img/fao.png" alt="Fao Schwarz" class="">
             </div>
         </div>
-
-
         {{-- Right side nav --}}
-
-
-        <div class="w-full aspect-[2/1]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="13 0 87 45">
+        <div class="col-span-1 ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="43 0 57 45" class=" h-14 md:h-fit">
                 <line x1="90" y1="1.8" x2="100" y2="1.6" stroke="#292F36"
                     stroke-width="6" />
                 <line x1="90" y1="1.6" x2="88" y2="1.8" stroke="white" stroke-width="6"
@@ -198,10 +189,7 @@
                 <line x1="95" y1="43" x2="66" y2="43" stroke="white" stroke-width="4"
                     stroke-linecap="round" />
             </svg>
-
         </div>
-
-
 </div>
 
 </nav>
