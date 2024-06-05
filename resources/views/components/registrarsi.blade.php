@@ -6,16 +6,16 @@
   <h1 class="md:text-xl hidden md:flex  text-[rgb(228,228,228)] tracking-wide text-sm  font-family">Perché registrarsi?</h1>
   <h2 class="text-xl md:hidden flex font-semibold tracking-wide text-[rgb(231,231,231)] font-family">Perché registrarsi?</h1>
 
-  <div class="lg:flex md:flex-row flex-col  gap-14 card-position pb-8 ">
+  <div class="lg:flex md:flex-row flex-col  gap-16 card-position  pb-8 ">
 
 
-    <div class="bg-[#e6e6e9] rounded-xl flex gap-14 flex-col p-2 lg:m-0 m-3 lg:w-[21rem] h-[17rem]">
+    <div class="bg-[#e6e6e9] rounded-xl flex gap-14 flex-col p-2 lg:m-0 m-3 lg:w-[22rem] h-[19rem]">
       <img class="card-img-top md:w-36 w-32 h-20 mx-auto mt-7 md:h-24" src="img\card.png" alt="Card image cap">
       <p class="line text-center pb-3  font-bold text-[#292f36] text-base md:text-lg w-[70%] mx-auto font-family">Tutti i vantaggi della Carta Fedeltà Toys Center</p>
     </div>
 
 
-    <div class="bg-[#e6e6e9] rounded-xl flex flex-col gap-14  p-3 lg:m-0 m-3  lg:w-[21rem] h-[17rem]">
+    <div class="bg-[#e6e6e9] rounded-xl flex flex-col gap-14  p-3 lg:m-0 m-3  lg:w-[22rem] h-[19rem]">
    
         <svg xmlns="http://www.w3.org/2000/svg"  class=" h-44 mx-auto mt-8 -rotate-[22deg] md:w-32 md:h-24" viewBox="0 0 24 20" fill="none" stroke="#2e343b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier"> <path d="M3 11l18-5v12L3 14v-3z"></path> <path d="M11.6 16.8a3 3 0 11-5.8-1.6"></path> </g></svg>
@@ -23,7 +23,7 @@
 
     </div>
 
-    <div class="bg-[#e6e6e9] rounded-xl flex gap-14  flex-col lg:m-0 m-3 p-3 lg:w-[21rem] h-[17rem] ">
+    <div class="bg-[#e6e6e9] rounded-xl flex gap-14  flex-col lg:m-0 m-3 p-3 lg:w-[22rem] h-[19rem] ">
       <svg viewBox="0 0 24 24" fill="none" class="  h-52 mt-6" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

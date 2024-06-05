@@ -6,14 +6,14 @@
 
 <div class="flex flex-col lg:h-full h-fit bg-[#292f36]">
     <div class=" text-white flex flex-col items-center justify-center gap-3 lg:m-20  ">
-        <h2 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-16">Benvenuto!</h2>
+        <h2 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-12">Benvenuto!</h2>
         <p class="lg:w-[35%] w-full justify-center text-center">Abbiamo appena inviato la tua card anche alla tua email e
             via SMS al tuo numero di cellulare, se lo hai inserito in fase di iscrizione.</p>
 
         <div class="lg:flex flex-row lg:mt-8 ">
             <div class="flex flex-col items-center font-semibold lg:ml-60 ">
                 <p class="text-lg">Ecoo la tua card:</p>
-                <img src="/img\newcard.png" class="w-80 h-52 rounded-lg lg:mt-6 mt-2" alt="card">
+                <img src="/img\newcard.png" class="w-80 h-52 lg:rounded-lg rounded-2xl mt-6 lg:p-0 p-2" alt="card">
                 <span
                     class="-translate-y-9 text-center font-semibold text-xl text-black tracking-wider">6666691003559</span>
 

@@ -75,7 +75,7 @@
           <h3 class=" font-semibold mt-2 text-xl text-left">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze. </h3>
 
           
-          <x-layouts.check-toggles class="md:w-[52%] w-[100%] mx-auto mt-8"/>
+          <x-layouts.check-toggles class="md:w-[54%] w-[100%] mx-auto mt-8"/>
 
         </div>
         <div class="flex flex-col gap-5">

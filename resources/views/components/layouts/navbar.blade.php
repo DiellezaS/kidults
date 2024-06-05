@@ -2,7 +2,7 @@
 @vite('resources/css/app.css')
 
 
-<nav class="w-screen lg:h-20 md:h-fit h-14">
+<nav class="w-full lg:h-20 md:h-fit sm:h-16 relative">
 
     <div class="lg:grid hidden grid-cols-2 ">
         <div class="grid grid-cols-3 pb-4">
@@ -87,9 +87,9 @@
 
 
 
-    <div class="lg:hidden grid grid-cols-6 w-full">
-        <div class="col-span-1 aspect-[2/1] ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 45" class="h-14 md:h-fit">
+    <div class="lg:hidden flex justify-between max-w-screen-2xl relative mx-auto ">
+        <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 45" class="sm:h-16 h-14 md:h-24 ">
                 <line x1="0" y1="1.8" x2="12" y2="1.6" stroke="#292F36"
                     stroke-width="6" />
                 <line x1="12" y1="1.6" x2="30" y2="1.8" stroke="white" stroke-width="6"
@@ -120,9 +120,9 @@
                     stroke-linecap="round" />
             </svg>
         </div>
-        <div class="grid grid-cols-3 col-span-4 lg:hidden min-h-fit">
-            <div class="pr-6 border-r col-span-1 ">
-                <a href="/" class="flex justify-end">
+        <div class="flex flex-row mx-auto justify-between">
+            <div class="md:pr-8 sm:pr-6  border-r  ">
+                <a href="/" class="flex">
                     <svg xmlns="http://www.w3.org/2000/svg" class="md:h-16 h-12 md:mt-3 pt-3" viewBox="0 0 90 60">
                         <g transform="translate(-452.675 78.961) rotate(-11)">
                             <g transform="translate(452.146 0)">
@@ -151,15 +151,16 @@
                 </a>
             </div>
             {{-- images sm-screen --}}
-            <div class="grid grid-cols-3 col-span-2 px-6 gap-6  pt-3">
-                <img src="img/t_c.png" alt="Toys Center" class="" >
-                <img src="img/b_s.png" alt="Bimbo Store" class="">
-                <img src="img/fao.png" alt="Fao Schwarz" class="">
+            <div class="flex  items-center sm:justify-around sm:w-auto md:gap-12 sm:gap-14 px-2 ">
+                <img src="img/t_c.png" alt="Toys Center" class="w-auto h-12 sm:h-16 p-1" >
+                <img src="img/b_s.png" alt="Bimbo Store" class="w-auto h-12 sm:h-16 p-1">
+                <img src="img/fao.png" alt="Fao Schwarz" class="w-auto h-12 sm:h-16 p-1">
             </div>
+            
         </div>
         {{-- Right side nav --}}
-        <div class="col-span-1 ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="43 0 57 45" class=" h-14 md:h-fit">
+        <div class="flex ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="43 0 57 45" class=" sm:h-16 h-14 md:h-24 ">
                 <line x1="90" y1="1.8" x2="100" y2="1.6" stroke="#292F36"
                     stroke-width="6" />
                 <line x1="90" y1="1.6" x2="88" y2="1.8" stroke="white" stroke-width="6"
@@ -168,19 +169,19 @@
                     stroke-width="6" stroke-linecap="round" />
                 <line x1="95" y1="12" x2="100" y2="12" stroke="#292F36"
                     stroke-width="5" stroke-linecap="round" />
-                <line x1="95" y1="12" x2="66" y2="12" stroke="white"
+                <line x1="95" y1="12" x2="70" y2="12" stroke="white"
                     stroke-width="5.5" stroke-linecap="round" />
                 <line x1="80" y1="17" x2="100" y2="17" stroke="#292F36"
                     stroke-width="6" stroke-linecap="round" />
                 <line x1="90" y1="23" x2="100" y2="23" stroke="#292F36"
                     stroke-width="8" stroke-linecap="round" />
-                <line x1="95" y1="23" x2="64" y2="23" stroke="white"
+                <line x1="95" y1="23" x2="68" y2="23" stroke="white"
                     stroke-width="6.5" stroke-linecap="round" />
                 <line x1="75" y1="29" x2="100" y2="29" stroke="#292F36"
                     stroke-width="6" stroke-linecap="round" />
                 <line x1="87" y1="34" x2="100" y2="34" stroke="#292F36"
                     stroke-width="6" stroke-linecap="round" />
-                <line x1="90" y1="34" x2="60" y2="34" stroke="white" stroke-width="5"
+                <line x1="90" y1="34" x2="70" y2="34" stroke="white" stroke-width="5"
                     stroke-linecap="round" />
                 <line x1="70" y1="39" x2="100" y2="39" stroke="#292F36"
                     stroke-width="5" stroke-linecap="round" />

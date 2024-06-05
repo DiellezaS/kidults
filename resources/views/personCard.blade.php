@@ -7,13 +7,13 @@
 
 
 <div class="lg:flex flex-col lg:h-full h-fit bg-[#292f36]">
-    <div class=" text-white flex flex-col items-center justify-center gap-3 lg:m-16 m-1">
-        <h1 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-16">Benvenuto/a nell'area Kidults.</h1>
+    <div class=" text-white flex flex-col items-center justify-center lg:gap-3 lg:m-16">
+        <h1 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-10">Benvenuto/a nell'area Kidults.</h1>
 
         <div class="lg:flex flex-row mt-8">
             <div class="flex flex-col items-center font-bold lg:ml-60 ">
                 <p>Ecoo la tua card:</p>
-                <img src="img\newcard.png" class="w-80 h-52 rounded-lg mt-6" alt="card">
+                <img src="img\newcard.png" class="w-80 h-52 lg:rounded-lg rounded-2xl mt-6 lg:p-0 p-2" alt="card">
                 <span
                     class="-translate-y-8 text-center font-semibold text-xl text-black tracking-wider">6666691003559</span>
 
