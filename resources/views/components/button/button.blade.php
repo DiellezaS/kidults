@@ -1,14 +1,4 @@
-{{-- 
 
-
-
-
-<button type="submit" class="bg-[#F34551] lg:px-8 md:px-6 px-5 md:py-1 py-2 uppercase text-white lg:text-[24px] md:text-[20px] text-xl font-[630] tracking-wide rounded-lg mx-auto text-center justify-center">
-    {{$slot}}
-</button> --}}
-
-
-
-<button type="submit" {{ $attributes->merge(['class' => 'bg-[#F34551]  uppercase text-white font-[630] tracking-wide rounded-lg mx-auto text-center justify-center']) }}>
+<button type="submit" {{ $attributes->merge(['class' => 'bg-[#F34551] font  uppercase text-white font-[630] tracking-wide mx-auto rounded-lg text-center w-auto']) }}>
     {{$slot}}
 </button>

@@ -1,12 +1,11 @@
 
-
-<div class="bg-white rounded-3xl font text-black  xl:px-24 xl:py-10  px-6 py-6 justify-self-start self-center  ">
-    <h1 class="text-[#F34551] text-xl lg:text-3xl  font-bold text-center  mb-6 ">Entra nell'area Kidults</h1>
-    <h5 class=" font-semibold text-center leading-5 text-base w-full lg:w-[26rem]">Inizia la richiesta inserendo la tua email, se non hai già la  Fidelity Card ti chiederemo qualche dato aggiuntivo.</h5>
-    <x-forms.form action="/">
-      <div class="lg:flex flex-col lg:gap-20 gap-16 ">
-        <x-forms.input name="email" type="email" placeholder="Email*" class="lg:h-11 w-full h-10 " required />
-        <x-button.button class="px-5 py-2 text-xl lg:mt-0 mt-12">richiedila subito</x-button.button>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div {{ $attributes->merge(['class' => 'bg-white rounded-3xl font xl:max-w-[70%] lg:max-w-[90%] md:max-w-[80%] max-w-[90%] text-black aspect-[2/1]'])}}>
+  <h1 class="text-[#F34551] lg:text-3xl md:text-3xl text-xl font-bold text-center mb-6 ">Entra nell'area Kidults</h1>
+  <h5 class=" md:font-semibold self-center  text-center lg:leading-6 md:leading-7 leading-5 text-lg md:text-xl lg:text-base w-full ">Inizia la richiesta inserendo la tua email, se non hai già la  Fidelity Card ti chiederemo qualche dato aggiuntivo.</h5><x-forms.form action="/">
+      <div class="flex flex-col lg:gap-20  gap-16 ">
+        <x-forms.input name="email" type="email" placeholder="Email*" class="lg:h-11 w-full h-14 lg:placeholder:text-sm placeholder:text-base" required />
+        <x-button.button class="lg:px-5 lg:py-2 py-4 px-9 md:text-2xl lg:text-xl text-center">richiedila subito</x-button.button>
       </div>
     </x-forms.form>
   </div>
