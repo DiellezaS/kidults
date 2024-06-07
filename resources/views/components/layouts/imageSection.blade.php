@@ -1,4 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <x-img.background-img>
   <div id="imgdiv">
     <div>
@@ -13,6 +15,9 @@
     </div>
   </div>
 </x-img.background-img>
+
+
+
 <script>
     const dynamicHeightDiv = document.getElementById('dynamicHeightDiv');
     const elementFigure = document.getElementById('imgdiv');

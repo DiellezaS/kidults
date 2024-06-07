@@ -11,20 +11,6 @@ Route::get('/dati', function () {
 });
 
 
-Route::get('/registrarsi', function () {
-    return view('components\registrarsi');
-});
-
-
-
-Route::get('/partner', function () {
-    return view('components\partner');
-});
-
-
-Route::get('/cardToys', function () {
-    return view('components\cardToys');
-});
 
 
 Route::get('/card', function () {
@@ -41,6 +27,4 @@ Route::get('/cardToysCenter', function () {
     return view('cardToysCenter');
 });
 
-Route::get('/layouts/benvenuto', function () {
-    return view('layouts/benvenuto');
-});
+
