@@ -1,26 +1,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="bg-white xl:w-[70%] lg:w-[80%] font rounded-xl mx-auto mt-5">
     <h4 class=" text-right mr-10 py-8 font-semibold lg:text-base text-sm">*Campo obbligatorio</h4>
-    <x-forms.form action="/dati" class="md:p-16 p-5">
+    <x-forms.form action="{{route('register')}}" class="md:p-16 p-5">
+      @csrf
       <div class="flex flex-col lg:gap-10 md:gap-12 gap-10">
         <div class="relative md:w-[45%] ">
-          <x-forms.inputformat type="text" id="floating" class="md:h-16" required />
-          <x-forms.label for="floating" class=" ">Scegli il negozio*</x-forms.label>
+          <x-forms.inputformat type="text" id="negozio" name="negozio" class="md:h-16" required />
+          <x-forms.label for="negozio" class=" ">Scegli il negozio*</x-forms.label>
         </div>
         <div class="flex md:flex-row flex-col gap-6 ">
           <div class="relative md:w-[45%]">
-            <x-forms.inputformat type="text" id="name" class="md:h-16" required />
+            <x-forms.inputformat type="text" id="name" name="name" class="md:h-16" required />
             <x-forms.label for="name">Nome*</x-forms.label>
           </div>
           <div class="relative md:w-[45%]">
-            <x-forms.inputformat name="lastname" type="text" id="lastname" class="md:h-16" required />
+            <x-forms.inputformat name="lastname" type="text" id="lastname" name="lastname" class="md:h-16" required />
             <x-forms.label for="lastname">Cognome*</x-forms.label>
           </div>
         </div>
         <div class="flex  md:flex-row flex-col gap-6 ">
           <div class="relative  md:w-[45%]">
-            <x-forms.inputformat name="email" type="email" id="email" class="md:h-16" required />
+            <x-forms.inputformat name="email" type="email" id="email" name="email" class="md:h-16" required />
             <x-forms.label for="email">Email*</x-forms.label>
+            @if($errors->has('email'))
+            <span class="text-red-500">{{$errors->first('email')}}</span>
+            @endif
           </div>
           <div class="relative md:w-[45%]">
             <span class="border-r absolute z-20 border-gray-400  left-0 md:top-5 font-semibold md:h-7 h-5 top-4 px-3 md:text-base text-sm">+39</span>
@@ -38,7 +42,7 @@
         </div>
         <div class="flex  md:flex-row flex-col gap-6 ">
           <div class="relative md:w-[45%]">
-            <x-forms.inputformat name="date" type="text" id="datepicker" class="data" class="md:h-16" required></x-forms.inputformat>
+            <x-forms.inputformat name="date" type="text"  id="datepicker" class="data" class="md:h-16" required></x-forms.inputformat>
             <x-forms.label for="date"> Data di nascita*</x-forms.label>
           </div>
           <div class="relative md:w-[45%] ">

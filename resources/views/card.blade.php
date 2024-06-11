@@ -8,7 +8,7 @@
 <div class="flex flex-col lg:h-full h-fit bg-[#292f36]">
     <div class=" text-white flex flex-col items-center justify-center   lg:m-20 ">
         <h2 class="text-xl lg:text-4xl font-bold tracking-wide lg:mt-0 mt-12">Benvenuto!</h2>
-        <p class="xl:w-[38%] w-[85%] justify-center text-center  ">Abbiamo appena inviato la tua card anche alla tua email e
+        <p class="xl:w-[38%] w-[85%] justify-center text-center  mt-8">Abbiamo appena inviato la tua card anche alla tua email e
             via SMS al tuo numero di cellulare, se lo hai inserito in fase di iscrizione.</p>
 
         <div class="lg:flex flex-row lg:mt-8 ">

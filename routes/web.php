@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
+
+
+
 
 Route::get('/', function () {
     return view('home');
@@ -28,3 +32,5 @@ Route::get('/cardToysCenter', function () {
 });
 
 
+
+Route::post('/register', [AuthController::class, 'store'])->name('register');

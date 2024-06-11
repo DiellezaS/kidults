@@ -1,3 +1,5 @@
+
+
 @props([
 'type' => 'text', 'name', 'placeholder'
 ])
