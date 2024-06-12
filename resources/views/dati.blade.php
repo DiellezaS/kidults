@@ -11,7 +11,7 @@
 <div class="bg-[#292F36] mx-auto p-5 ">
   <h1 class="text-white xl:text-3xl lg:text-2xl text-xl text-left md:-translate-x-14 md:text-center xl:-translate-x-[300px] lg:-translate-x-6 py-8 font-bold">Compila questi dati per effettuare la registrazione. </h1>
   
-  <x-layouts.pg3-form/>
+  <x-layouts.pg3-form :interessi="$interessi"/>
 </div>
 
 </div>

@@ -6,7 +6,7 @@
   
     @section('content')
 
-      <x-layouts.cardtoys></x-layouts.cardtoys>
+      <x-layouts.cardtoys :interessi="$interessi"></x-layouts.cardtoys>
 
 
       @endsection

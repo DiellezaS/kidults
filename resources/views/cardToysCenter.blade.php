@@ -5,7 +5,7 @@
 
 <x-layouts.navbar />
 
-<x-layouts.page2-section></x-layouts.page2-section>
+<x-layouts.page2-section :interessi="$interessi"></x-layouts.page2-section>
 
 
 

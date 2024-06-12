@@ -6,7 +6,7 @@
             <h2 class="text-[#F34551] pt-7 tracking-tight  md:text-3xl text-lg font-[750]">Possiedi già una Card Toys Center</h2>
             <h5 class="text-[#F34551] text-base tracking-tight font-medium md:text-xl">Prima di procedere...</h5>
             <p class="md:w-[68%] w-[78%] text-center tracking-wide md:tracking-normal leading-5 text-sm md:text-sm font-semibold">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze.</p>
-            <x-layouts.check-toggles class=" xl:w-[95%] lg:w-[120%]" />
+            <x-layouts.check-toggles class=" xl:w-[95%] lg:w-[120%]" :interessi="$interessi"/>
             <div class="flex flex-col space-y-3 ">
                 <div class="self-center mt-4"> <x-button.button class="py-2 px-8 text-2xl">CONFERMA</x-button.button>
                 </div>
