@@ -1,4 +1,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+@if(Auth::check())
+    <script>
+        setTimeout(function() {
+            window.location.href = "{{ url('/personCard') }}";
+        }, 0); 
+    </script>
+@else
 <div class="bg-white xl:w-[70%] lg:w-[80%] font rounded-xl mx-auto mt-5">
     <h4 class=" text-right mr-10 py-8 font-semibold lg:text-base text-sm">*Campo obbligatorio</h4>
     <x-forms.form action="{{route('register')}}" class="md:p-16 p-5">
@@ -88,6 +97,9 @@
       </div>
     </x-forms.form>
   </div>
+
+  @endif
+
   <script type="text/javascript">
   $(function() {
     $("#datepicker").datepicker({

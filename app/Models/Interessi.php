@@ -8,7 +8,7 @@ class Interessi extends Model
     protected $table = 'interessi';
     public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class,'user_interessi');
     }
     
 }

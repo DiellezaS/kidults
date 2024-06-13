@@ -1,8 +1,10 @@
 <?php
 namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
+use App\Models\Interessi;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 class AuthController extends Controller
 {
@@ -26,7 +28,7 @@ class AuthController extends Controller
                         ->withErrors($validator)
                         ->withInput();
     }
-    $user = new User([
+    $user = User::create([
         'negozio' => $request->get('negozio'),
         'lastname' => $request->get('lastname'),
         'name' => $request->get('name'),
@@ -39,7 +41,25 @@ class AuthController extends Controller
         'cap'=> $request->get('cap'),
         'provinca'=> $request->get('provinca'),
     ]);
-    $user->save();
-    return redirect('/cardToysCenter')->with('message', 'Registered successfully, please login...');
+
+
+    if ($request->has('interessi')) {
+        $interests = Interessi::whereIn('id', $request->input('interessi'))->get();
+        $user->choices()->attach($interests);
+    }
+
+
+
+
+
+ if (Auth::check()) {
+    return redirect('/personCard');
 }
-}   
+  
+}
+
+
+
+
+
+}

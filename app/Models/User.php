@@ -47,6 +47,6 @@ class User extends Authenticatable
     }
     public function choices()
     {
-        return $this->belongsToMany(Interessi::class);
+        return $this->belongsToMany(Interessi::class,'user_interessi');
     }
 }

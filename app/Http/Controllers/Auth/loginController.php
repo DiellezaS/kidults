@@ -3,40 +3,33 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 
 class loginController extends Controller
 {
     public function processForm(Request $request)
+    
     {
-        
+        // Check if the user is already authenticated
+        if (Auth::check()) {
+            return redirect('/cardToysCenter');
+        }
+
+        // Your existing login logic
         $request->validate([
             'email' => 'required|email',
         ]);
 
-        // Check if the user exists with the provided email
         $user = User::where('email', $request->email)->first();
 
         if ($user) {
-            // If user exists, redirect to cardToysCenter
+            // Authenticate the user
+            Auth::login($user);
             return redirect('cardToysCenter');
-          
         } else {
-            // If user does not exist, redirect to dati
             return redirect('dati');
-         
         }
     }
 
-    // Method to display cardToysCenter page
-    public function showCardToysCenter()
-    {
-        return view('cardToysCenter');
-    }
 
-    // Method to display dati page
-    public function showDati()
-    {
-        return view('dati');
-    }
 }
