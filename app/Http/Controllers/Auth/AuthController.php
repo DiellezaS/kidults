@@ -52,9 +52,10 @@ class AuthController extends Controller
 
 
 
- if (Auth::check()) {
-    return redirect('/personCard');
-}
+    if ($user) {
+        Auth::login($user);
+        return redirect('/personCard');
+    }
   
 }
 

@@ -10,12 +10,10 @@ class loginController extends Controller
     public function processForm(Request $request)
     
     {
-        // Check if the user is already authenticated
         if (Auth::check()) {
             return redirect('/cardToysCenter');
         }
 
-        // Your existing login logic
         $request->validate([
             'email' => 'required|email',
         ]);
@@ -23,7 +21,6 @@ class loginController extends Controller
         $user = User::where('email', $request->email)->first();
 
         if ($user) {
-            // Authenticate the user
             Auth::login($user);
             return redirect('cardToysCenter');
         } else {

@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\loginController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InteressiController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,9 +29,6 @@ Route::get('/personCard', function () {
 
 
 
-
-
-
 Route::post('/register', [AuthController::class, 'store'])->name('register');
 
 
@@ -40,19 +36,8 @@ Route::post('/register', [AuthController::class, 'store'])->name('register');
 
 Route::post('/login', [loginController::class, 'processForm'])->name('login');
 
-// // Routes for displaying different pages
-// Route::get('/cardToysCenter', [loginController::class, 'showCardToysCenter'])->name('cardToysCenter');
-// Route::get('/dati', [loginController::class, 'showDati'])->name('dati');
 
 
-
-
-// Route::middleware('check_email_in_session')->group(function () {
-//     // Routes that should be protected
-//     Route::get('/', function () {
-//         return view('/');
-//     });
-// });
 
 
 

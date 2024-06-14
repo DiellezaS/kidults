@@ -3,6 +3,13 @@
 
 
 <div class="absolute font  xl:inset-8 md:inset-0 inset-0 self-center ">
+   
+    {{-- @foreach($interessi as $interesse)
+    <input type="checkbox" name="interessi[]" value="{{ $interesse->id }}" {{ isset($user) && $user->choices->contains($interesse->id) ? 'checked' : '' }}>
+    <label>{{ $interesse->name }}</label>
+@endforeach --}}
+
+    
     <div id="img-div" class=" xl:p-2  m-3 flex lg:flex-row flex-col  relative mx-auto 2xl:max-w-[73%] xl:max-w-[98%] lg:max-w-[90%] md:max-w-[80%] max-w-[90%]  ">
         <div class="flex flex-col items-center bg-white rounded-3xl rounded-b-none lg:rounded-b-3xl lg:rounded-br-none lg:rounded-e-none lg:pt-0 lg:px-8 2xl:p-8 xl:p-4  md:pt-4 px-3 md:p-14 space-y-2">
             <h2 class="text-[#F34551] pt-7 tracking-tight  md:text-3xl text-lg font-[750]">Possiedi già una Card Toys Center</h2>
@@ -62,17 +69,3 @@
     updateDiv();
     window.addEventListener('resize', updateDiv);
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
