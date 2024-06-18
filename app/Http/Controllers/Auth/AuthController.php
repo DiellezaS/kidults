@@ -45,7 +45,7 @@ class AuthController extends Controller
 
     if ($request->has('interessi')) {
         $interests = Interessi::whereIn('id', $request->input('interessi'))->get();
-        $user->choices()->attach($interests);
+        $user->interessi()->attach($interests);
     }
 
 

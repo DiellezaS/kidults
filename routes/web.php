@@ -39,6 +39,9 @@ Route::post('/login', [loginController::class, 'processForm'])->name('login');
 
 
 
+Route::post('/updateInterests', [InteressiController::class, 'updateInterests'])->name('updateInterests');
+
+Route::get('/getUserInterests', [InteressiController::class, 'getUserInterests']);
 
 
 Route::get('/check-toggles', [InteressiController::class, 'checkbox']);
@@ -47,3 +50,6 @@ Route::get('/page2-section', [InteressiController::class, 'pg2Section']);
 Route::get('/cardToysCenter', [InteressiController::class, 'pg2']);
 Route::get('/dati', [InteressiController::class, 'dati']);
 Route::get('/components.layouts.pg3-form', [InteressiController::class, 'pg3_form']);
+
+
+// Route::get('/components.layouts.cardToys', [InteressiController::class, 'cardToys']);

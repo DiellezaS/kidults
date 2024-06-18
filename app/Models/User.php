@@ -45,8 +45,14 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
         ];
     }
-    public function choices()
+    // public function choices()
+    // {
+    //     return $this->belongsToMany(Interessi::class,'user_interessi');
+    // }
+
+
+    public function interessi()
     {
-        return $this->belongsToMany(Interessi::class,'user_interessi');
+        return $this->belongsToMany(Interessi::class, 'user_interessi');
     }
 }

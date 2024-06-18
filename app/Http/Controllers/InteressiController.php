@@ -7,50 +7,48 @@ use Illuminate\Support\Facades\Auth;
 class InteressiController extends Controller
 {
 
-    public function updateInteressi(Request $request) {
-        $user = Auth::user();
-        $userId = $user->id;
-        if ($request->has('interessi')) {
-            $selectedInteressi = $request->input('interessi');
-            $userId->choices()->detach();
-            $userId->choices()->sync($selectedInteressi);
-        }
-        return redirect()->back()->with('success', 'Interests updated successfully.');
+    public function updateInterests(Request $request)
+{
+    $user = Auth::user();
+    $existingInterestIds = $user->interessi()->pluck('interessi_id')->toArray();
+    $newlySelectedInterestIds = $request->input('interessi', []);
+    $interestsToRemove = array_intersect($existingInterestIds, $newlySelectedInterestIds);
+    if (!empty($interestsToRemove)) {
+        $user->interessi()->detach($interestsToRemove);
     }
-    // public function checkbox()
-    // {
-    //     $interessi = Interessi::all();
-    //     $user = Auth::user(); 
-    //     return view('components.layouts.check-toggles', ['interessi' => $interessi, 'user' => $user]);
-    
-    //     // $interessi = Interessi::all();
-    //     // return view('components.layouts.check-toggles', ['interessi'=> $interessi]);
-    // }
-
+    // Add new interests that are selected
+    $interestsToAdd = array_diff($newlySelectedInterestIds, $existingInterestIds);
+    if (!empty($interestsToAdd)) {
+        $interestsToAdd = Interessi::whereIn('id', $interestsToAdd)->get();
+        foreach ($interestsToAdd as $interest) {
+            $user->interessi()->attach($interest->id);
+        }
+    }
+    return redirect('/card');
+}
+public function getUserInterests(){
+    $user = Auth::user();
+    $existingInterestIds = $user->interessi()->pluck('interessi_id')->toArray();
+    $interessi = Interessi::all();
+    return response()->json($existingInterestIds);
+}
     public function checkbox()
     {
         if (Auth::check()) {
-            $user = Auth::user(); 
-            $interessi = Interessi::all();
+            $user = Auth::user();
+            $interessi = $user->interessi; 
             return view('components.layouts.check-toggles', compact('interessi', 'user'));
         } else {
-            // Handle the case where the user is not authenticated
             return redirect()->route('login')->with('error', 'Please log in to access this page.');
         }
     }
+
     public function checkbox_form()
 {
     $interessi = Interessi::all();
     $user = Auth::user(); // Retrieve the authenticated user
     return view('components.layouts.cardtoys', compact('interessi', 'user'));
 }
-
-
-    // public function checkbox_form()
-    // {
-    //     $interessi = Interessi::all();
-    //     return view('components.layouts.cardtoys', ['interessi'=> $interessi]);
-    // }
     public function pg2Section()
     {
         $interessi = Interessi::all();
