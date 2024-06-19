@@ -55,7 +55,12 @@ public function getUserInterests(){
     public function pg2()
     {
         $interessi = Interessi::all();
+        if (!Auth::check()) {
+        return redirect('/');
+    }
+    else{
         return view('cardToysCenter', ['interessi' => $interessi]);
+    }
     }
     public function dati()
     {
@@ -64,7 +69,9 @@ public function getUserInterests(){
     }
     public function pg3_form()
     {
+
         $interessi = Interessi::all();
+       
         return view('components.layouts.pg3-form', ['interessi' => $interessi]);
     }
 }
