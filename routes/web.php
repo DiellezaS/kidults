@@ -16,9 +16,6 @@ Route::get('/dati', function () {
     return view('dati');
 });
 
-
-
-
 Route::get('/card', function () {
     return view('/card');
 });
@@ -27,22 +24,13 @@ Route::get('/personCard', function () {
     return view('/personCard');
 });
 
-
-
 Route::post('/register', [AuthController::class, 'store'])->name('register');
 
-
-
-
 Route::post('/login', [loginController::class, 'processForm'])->name('login');
-
-
-
 
 Route::post('/updateInterests', [InteressiController::class, 'updateInterests'])->name('updateInterests');
 
 Route::get('/getUserInterests', [InteressiController::class, 'getUserInterests']);
-
 
 Route::get('/check-toggles', [InteressiController::class, 'checkbox']);
 Route::get('/cardToys',[InteressiController::class, 'checkbox_form']);
@@ -52,4 +40,3 @@ Route::get('/dati', [InteressiController::class, 'dati']);
 Route::get('/components.layouts.pg3-form', [InteressiController::class, 'pg3_form']);
 
 
-// Route::get('/components.layouts.cardToys', [InteressiController::class, 'cardToys']);

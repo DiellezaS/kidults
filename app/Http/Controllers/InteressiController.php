@@ -34,20 +34,18 @@ public function getUserInterests(){
 }
     public function checkbox()
     {
-        if (Auth::check()) {
-            $user = Auth::user();
-            $interessi = $user->interessi; 
-            return view('components.layouts.check-toggles', compact('interessi', 'user'));
-        } else {
-            return redirect()->route('login')->with('error', 'Please log in to access this page.');
-        }
+        
+            $interessi = Interessi::all();
+            return view('components.layouts.check-toggles', ['interessi'=>$interessi]);
+      
+         
     }
 
     public function checkbox_form()
 {
     $interessi = Interessi::all();
-    $user = Auth::user(); // Retrieve the authenticated user
-    return view('components.layouts.cardtoys', compact('interessi', 'user'));
+   
+    return view('components.layouts.cardtoys', ['interessi'=>$interessi]);
 }
     public function pg2Section()
     {

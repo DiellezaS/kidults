@@ -87,7 +87,11 @@
         <div>
           <h1 class="text-left text-[#F34551] font-bold lg:text-3xl md:text-xl">I tuoi interesi</h1>
           <h3 class=" font-semibold mt-4 md:text-lg text-sm text-left">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze. </h3>
-          <x-layouts.check-toggles class="xl:w-[45%] lg:w-[100%] md:w-[80%] w-[105%] mx-auto" :interessi="$interessi"/>
+
+          
+          <x-layouts.check-toggles class="xl:w-[45%] lg:w-[100%] md:w-[80%] w-[105%] mx-auto" id="interessi" name="interessi" :interessi="$interessi"/>
+
+
         </div>
         <div class="flex flex-col gap-5">
           <h1 class="text-left text-[#F34551] font-bold lg:text-3xl md:text-xl">Informativa privacy</h1>
